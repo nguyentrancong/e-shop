@@ -2,4 +2,10 @@
    https://cdnjs.com/libraries/normalize
 
 2. Fonts
-   https://fonts.google.com/selection/embed
+   https://fonts.google.com/
+
+3. Tool get color
+   https://apps.apple.com/us/app/colorslurp/id1287239339
+
+4. icon
+   https://fontawesome.com/download
