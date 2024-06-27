@@ -1,3 +1,4 @@
+/* -----------Header------------ */
 .header {
     height: 120px;
     background-image: linear-gradient(0, #fe6433, #f53e2d);
@@ -18,6 +19,10 @@
     padding: 0 8px;
     position: relative;
     min-height: 26px;
+}
+
+.header__navbar-item--has-qr:hover .header__qr {
+    display: block;
 }
 
 .header__navbar-item,
@@ -71,3 +76,45 @@
     cursor: text;
     color: var(--white-color);
 }
+
+/* Header QR */
+.header__qr {
+    width: 140px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 15%;
+    top: 118%;
+    padding: 4px;
+    border-radius: 2px;
+    display: none;
+    animation: fadeIn ease-in 0.5s;
+}
+
+.header_qr::before {
+    position: absolute;
+    left: 15%;
+    top: -16px;
+    width: 100%;
+    height: 20px;
+    content: '';
+    display: block;
+}
+
+.header__qr-img {
+    width: 100%;
+    height: auto;
+}
+.header__qr-apps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__qr-app-link {
+    font-size: 1rem;
+    text-decoration: none;
+}
+/* ------------------------- */
+/* -----------Body-------------- */
+/* ------------------------- */
+/* ------------Footer------------- */
+/* ------------------------- */
