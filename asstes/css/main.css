@@ -83,7 +83,7 @@
     background-color: var(--white-color);
     position: absolute;
     left: 15%;
-    top: 118%;
+    top: 100%;
     padding: 4px;
     border-radius: 2px;
     display: none;
@@ -113,6 +113,118 @@
     font-size: 1rem;
     text-decoration: none;
 }
+/* Notify */
+.header__notify {
+    position: absolute;
+    top: 118%;
+    right: 0;
+    width: 400px;
+    background-color: var(--white-color);
+    transform-origin: 90% top;
+    animation: headerNotify ease-in 0.3s;
+    will-change: opacity, transform;
+    display: none;
+}
+
+.header__notify::before {
+    content: '';
+    position: absolute;
+    border: 20px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    right: 12px;
+    top: -25px;
+}
+
+.header__notify::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width: 120px;
+    height: 10px;
+    /* background-color: #666; */
+}
+
+.header__navbar-item-notify:hover .header__notify {
+    display: block;
+}
+
+@keyframes headerNotify {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header__notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+}
+.header__notify-header h3 {
+    color: #666;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+    margin: 0 12px;
+}
+.header__notify-list {
+    padding-left: 0;
+}
+.header__notify-item {
+    padding: 12px 0;
+}
+.header__notify-item:hover {
+    background-color: #127c1ea3;
+}
+.header__notify-item-viewed {
+    background-color: var(--primary-color-01);
+}
+.header__notify-link {
+    display: flex;
+    text-decoration: none;
+}
+.header__notify-img {
+    width: 60px;
+    object-fit: contain;
+    padding-left: 12px;
+}
+.header__notify-info {
+    padding-left: 12px;
+    justify-content: space-evenly;
+}
+.header__notify-name {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--black-color);
+    font-weight: 400;
+}
+
+.header__notify-description {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--black-color);
+    margin-top: 6px;
+}
+.header__notify-footer {
+    display: flex;
+}
+.header__notify-footer:hover {
+    background-color: #fb9086;
+}
+.header__notify-footer-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 12px;
+    margin: auto;
+}
+
 /* ------------------------- */
 /* -----------Body-------------- */
 /* ------------------------- */
